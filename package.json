@@ -2,7 +2,7 @@
   "name": "react-snappy",
   "version": "1.0.0",
   "description": "React component which makes finding and using stock images easy",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "./node_modules/.bin/babel src -d lib",
     "watch": "./node_modules/.bin/babel src -w -d lib",
