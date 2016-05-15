@@ -1,7 +1,8 @@
 const React = require('react');
 const _ = require('lodash');
 
-const API_URL = 'http://localhost:8000';
+// const API_URL = 'http://localhost:8000';
+const API_URL = 'https://snappy-api.herokuapp.com';
 
 function getImageURL(props) {
   return `${ API_URL }/images/${ props.id.replace(/ /g, '-') }/`;
