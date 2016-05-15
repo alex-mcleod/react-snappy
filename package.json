@@ -1,0 +1,29 @@
+{
+  "name": "react-snappy",
+  "version": "1.0.0",
+  "description": "React component which makes finding and using stock images easy",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src -d lib",
+    "watch": "./node_modules/.bin/babel src -w -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex McLeod <alxmcleod@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.8.2",
+    "query-string": "^4.1.0",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-eslint": "^6.0.2",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^2.6.0",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-plugin-import": "^1.4.0",
+    "eslint-plugin-react": "^4.2.3"
+  }
+}
