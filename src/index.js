@@ -15,7 +15,7 @@ const styles = {
     backgroundPosition: 'center',
     backgroundSize: 'cover'
   }
-}
+};
 
 class DivImage extends React.Component {
 
