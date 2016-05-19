@@ -5,6 +5,7 @@ const _ = require('lodash');
 const API_URL = 'https://snappy-api.herokuapp.com';
 
 function getImageURL(props) {
+  if (props.src) return props.src;
   return `${ API_URL }/images/${ props.id.replace(/ /g, '-') }/`;
 }
 
@@ -21,7 +22,7 @@ const styles = {
 class DivImage extends React.Component {
 
   static propTypes = {
-    id: React.PropTypes.string.isRequired,
+    id: React.PropTypes.string,
     width: React.PropTypes.oneOfType([
       React.PropTypes.string,
       React.PropTypes.number
@@ -30,7 +31,8 @@ class DivImage extends React.Component {
       React.PropTypes.string,
       React.PropTypes.number
     ]),
-    style: React.PropTypes.object
+    style: React.PropTypes.object,
+    src: React.PropTypes.string
   }
 
   render() {
